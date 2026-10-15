@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="id">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f3f8fc">
+	<title>Nalar | Dashboard Belajar</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+	<div class="app-shell">
+		<aside class="sidebar">
+			<a class="brand" href="#beranda" aria-label="Nalar, beranda">
+				<span class="brand-mark" role="img" aria-label="Slot gambar logo Nalar"></span>
+				<span class="brand-copy"><strong>NALAR</strong><small>Asah Pikiran, Temukan Perspektif.</small></span>
+			</a>
+
+			<nav class="primary-nav" aria-label="Navigasi utama">
+				<a class="nav-link is-active" href="#beranda"><span class="nav-icon">⌂</span>Beranda</a>
+				<a class="nav-link" href="#latihan"><span class="nav-icon">▱</span>Latihan</a>
+				<a class="nav-link" href="#materi"><span class="nav-icon">▤</span>Materi</a>
+				<a class="nav-link" href="#aktivitas"><span class="nav-icon">◷</span>Riwayat</a>
+				<a class="nav-link" href="#profil"><span class="nav-icon">♙</span>Profil</a>
+				<a class="nav-link" href="#pengaturan"><span class="nav-icon">◎</span>Pengaturan</a>
+			</nav>
+
+			<div class="sidebar-note">
+				<span class="note-spark" aria-hidden="true">✦</span>
+				<p>Pikir kritis hari ini,<br>untuk keputusan yang<br>lebih baik esok.</p>
+			</div>
+			<div class="sidebar-footer"><span class="status-dot"></span>Belajar dengan rasa ingin tahu</div>
+		</aside>
+
+		<main class="main-content" id="beranda">
+			<header class="topbar">
+				<label class="global-search">
+					<span aria-hidden="true">⌕</span>
+					<input type="search" placeholder="Cari materi, latihan, atau topik..." aria-label="Cari materi, latihan, atau topik">
+					<kbd>⌘ K</kbd>
+				</label>
+				<div class="topbar-actions">
+					<button class="icon-button notification-button" type="button" aria-label="Notifikasi"><span>♧</span><i></i></button>
+					<a class="profile-chip" href="#profil">
+						<span class="avatar">BS</span>
+						<span><strong>Budi Santoso</strong><small>Pelajar</small></span>
+						<span class="chevron">⌄</span>
+					</a>
+				</div>
+			</header>
+
+			<div class="page-content">
+				<section class="welcome-panel" aria-labelledby="welcome-title">
+					<div class="welcome-copy">
+						<p class="eyebrow"><span class="eyebrow-dot"></span> RUANG BELAJAR ANDA</p>
+						<h1 id="welcome-title">Halo, Amba!</h1>
+						<p class="welcome-text">Terus asah pikiran, karena setiap pertanyaan<br class="desktop-break"> adalah langkah menuju pemahaman yang lebih baik.</p>
+						<div class="welcome-actions">
+							<a class="button button-primary" href="#latihan">Mulai latihan <span aria-hidden="true">→</span></a>
+							<a class="button button-secondary" href="#materi">Jelajahi materi</a>
+						</div>
+					</div>
+					<div class="hero-art image-slot" role="img" aria-label="Slot gambar ilustrasi belajar">
+						<span class="slot-label"><span aria-hidden="true">▧</span> GAMBAR HERO</span>
+					</div>
+					<blockquote class="quote-card">
+						<span class="quote-mark">“</span>
+						<p>Kebenaran bukanlah sesuatu yang selalu mutlak, tetapi sesuatu yang perlu dicari dari berbagai sudut pandang.</p>
+						<span class="quote-rule"></span>
+					</blockquote>
+				</section>
+
+				<section class="stats-grid" aria-label="Ringkasan progres">
+					<article class="stat-card">
+						<span class="stat-icon icon-blue">▣</span>
+						<div class="stat-content"><p>Total Latihan</p><strong>12</strong><small><span class="trend">↑</span> 3 dari minggu lalu</small></div>
+						<span class="stat-decoration">01</span>
+					</article>
+					<article class="stat-card">
+						<span class="stat-icon icon-sky">▤</span>
+						<div class="stat-content"><p>Materi Selesai</p><strong>5</strong><small><span class="trend">↑</span> 2 dari minggu lalu</small></div>
+						<span class="stat-decoration">02</span>
+					</article>
+					<article class="stat-card progress-card">
+						<span class="stat-icon icon-blue">⌁</span>
+						<div class="stat-content"><p>Progres Belajar</p><strong>42%</strong><div class="progress-track"><span style="width:42%"></span></div></div>
+						<span class="stat-decoration">03</span>
+					</article>
+					<article class="stat-card streak-card">
+						<span class="stat-icon icon-gold">✦</span>
+						<div class="stat-content"><p>Streak Hari Ini</p><strong>3 <small>hari</small></strong><small>teruskan besok!</small></div>
+						<span class="stat-decoration">04</span>
+					</article>
+				</section>
+
+				<section class="overview-grid">
+					<article class="panel activity-panel" id="aktivitas">
+						<div class="section-heading"><div><p class="eyebrow">JEJAK BELAJAR</p><h2>Aktivitas terbaru</h2></div><a class="text-link" href="#aktivitas">Lihat semua <span>→</span></a></div>
+						<div class="activity-list">
+							<div class="activity-row"><span class="activity-icon activity-complete">✓</span><div class="activity-copy"><strong>Menyelesaikan latihan: Analisis Klaim</strong><small>2 jam yang lalu</small></div><span class="tag tag-done">Selesai</span></div>
+							<div class="activity-row"><span class="activity-icon activity-read">▤</span><div class="activity-copy"><strong>Membaca materi: Hoaks dan Disinformasi</strong><small>5 jam yang lalu</small></div><span class="tag tag-read">Dibaca</span></div>
+							<div class="activity-row"><span class="activity-icon activity-save">+</span><div class="activity-copy"><strong>Menambahkan materi baru ke daftar belajar</strong><small>1 hari yang lalu</small></div><span class="tag tag-saved">Disimpan</span></div>
+						</div>
+					</article>
+
+					<article class="panel shortcuts-panel">
+						<div class="section-heading"><div><p class="eyebrow">LANGKAH BERIKUTNYA</p><h2>Menu cepat</h2></div></div>
+						<div class="shortcut-grid">
+							<a class="shortcut" href="#latihan"><span class="shortcut-icon">▧</span><span><strong>Latihan</strong><small>Uji kemampuanmu</small></span><span class="shortcut-arrow">→</span></a>
+							<a class="shortcut" href="#materi"><span class="shortcut-icon shortcut-teal">▣</span><span><strong>Materi</strong><small>Pelajari konsep penting</small></span><span class="shortcut-arrow">→</span></a>
+							<a class="shortcut" href="#aktivitas"><span class="shortcut-icon shortcut-orange">◷</span><span><strong>Riwayat</strong><small>Lihat hasil pemeriksaan</small></span><span class="shortcut-arrow">→</span></a>
+							<a class="shortcut" href="#profil"><span class="shortcut-icon shortcut-lime">♙</span><span><strong>Profil</strong><small>Kelola akunmu</small></span><span class="shortcut-arrow">→</span></a>
+						</div>
+					</article>
+
+					<article class="goal-panel">
+						<div class="goal-copy"><p class="eyebrow">TARGET HARI INI</p><h2>Satu langkah<br>lebih kritis.</h2><p>Jangan berhenti belajar, karena setiap pertanyaan membawa kamu lebih dekat pada kebenaran.</p><a class="button button-primary button-small" href="#latihan">Mulai sekarang <span>→</span></a></div>
+						<div class="goal-art image-slot" role="img" aria-label="Slot gambar target belajar"><span class="slot-label"><span aria-hidden="true">▧</span> GAMBAR</span></div>
+					</article>
+				</section>
+
+				<section class="learning-section" id="latihan">
+					<div class="section-heading learning-heading"><div><p class="eyebrow">ASAH KEMAMPUAN</p><h2>Latihan</h2><p class="section-description">Tingkatkan kemampuan berpikir kritis melalui beragam jenis latihan.</p></div><a class="text-link" href="#latihan">Semua latihan <span>→</span></a></div>
+					<div class="filter-row" aria-label="Kategori latihan"><button class="filter-chip is-selected" type="button">Semua <span>06</span></button><button class="filter-chip" type="button">Analisis Klaim</button><button class="filter-chip" type="button">Logika</button><button class="filter-chip" type="button">Sains</button><button class="filter-chip" type="button">Sosial &amp; Budaya</button><button class="filter-chip" type="button">Media Digital</button></div>
+					<div class="exercise-grid">
+						<a class="exercise-card" href="#latihan"><div class="exercise-top"><span class="exercise-icon exercise-blue">⌕</span><span class="level-pill">POPULER</span></div><h3>Analisis Klaim</h3><p>Latihan kemampuan dalam mengidentifikasi informasi yang valid.</p><div class="exercise-meta"><span>10 soal</span><span>◷ 15 menit</span><span class="exercise-go">→</span></div></a>
+						<a class="exercise-card" href="#latihan"><div class="exercise-top"><span class="exercise-icon exercise-green">✥</span></div><h3>Logika</h3><p>Tingkatkan kemampuan berpikir kritis dan sistematis.</p><div class="exercise-meta"><span>10 soal</span><span>◷ 15 menit</span><span class="exercise-go">→</span></div></a>
+						<a class="exercise-card" href="#latihan"><div class="exercise-top"><span class="exercise-icon exercise-orange">◉</span></div><h3>Sains</h3><p>Pahami informasi ilmiah dengan lebih mendalam.</p><div class="exercise-meta"><span>10 soal</span><span>◷ 15 menit</span><span class="exercise-go">→</span></div></a>
+						<a class="exercise-card" href="#latihan"><div class="exercise-top"><span class="exercise-icon exercise-violet">♧</span></div><h3>Sosial &amp; Budaya</h3><p>Kembangkan perspektif sosial dan budaya dalam pemahaman.</p><div class="exercise-meta"><span>10 soal</span><span>◷ 15 menit</span><span class="exercise-go">→</span></div></a>
+						<a class="exercise-card" href="#latihan"><div class="exercise-top"><span class="exercise-icon exercise-teal">▣</span></div><h3>Media Digital</h3><p>Pahami cara kerja media dan algoritma.</p><div class="exercise-meta"><span>10 soal</span><span>◷ 15 menit</span><span class="exercise-go">→</span></div></a>
+						<a class="exercise-card" href="#latihan"><div class="exercise-top"><span class="exercise-icon exercise-pink">+</span></div><h3>Kombinasi</h3><p>Latihan campuran dari berbagai topik.</p><div class="exercise-meta"><span>15 soal</span><span>◷ 25 menit</span><span class="exercise-go">→</span></div></a>
+					</div>
+				</section>
+
+				<section class="learning-section materials-section" id="materi">
+					<div class="section-heading learning-heading"><div><p class="eyebrow">PERLUAS WAWASAN</p><h2>Materi</h2><p class="section-description">Pelajari konsep penting untuk memahami dan menganalisis informasi.</p></div><a class="text-link" href="#materi">Semua materi <span>→</span></a></div>
+					<div class="materials-layout">
+						<div class="material-list">
+							<a class="material-card" href="#materi"><div class="material-art image-slot art-hoax" role="img" aria-label="Slot gambar materi hoaks"><span class="slot-label"><span>▧</span> GAMBAR</span></div><div class="material-copy"><span class="material-category">MEDIA DIGITAL <i>•</i> 12 MENIT</span><h3>Mengenal Hoaks dan Disinformasi</h3><p>Pelajari perbedaan hoaks, misinformasi, dan disinformasi serta cara mengidentifikasinya.</p><div class="material-meta"><span>◉ Bacaan</span><span>◷ 12 menit</span></div></div><span class="material-arrow">→</span></a>
+							<a class="material-card" href="#materi"><div class="material-art image-slot art-logic" role="img" aria-label="Slot gambar materi logika"><span class="slot-label"><span>▧</span> GAMBAR</span></div><div class="material-copy"><span class="material-category">LOGIKA <i>•</i> 8 MENIT</span><h3>Logika dalam Kehidupan Sehari-hari</h3><p>Pahami dasar-dasar logika dan penerapannya dalam pengambilan keputusan.</p><div class="material-meta"><span>◉ Bacaan</span><span>◷ 8 menit</span></div></div><span class="material-arrow">→</span></a>
+							<a class="material-card" href="#materi"><div class="material-art image-slot art-data" role="img" aria-label="Slot gambar materi data"><span class="slot-label"><span>▧</span> GAMBAR</span></div><div class="material-copy"><span class="material-category">SAINS <i>•</i> 10 MENIT</span><h3>Membaca Data dan Fakta</h3><p>Kenali cara membaca data, grafik, dan statistik dengan kritis.</p><div class="material-meta"><span>◉ Video</span><span>◷ 10 menit</span></div></div><span class="material-arrow">→</span></a>
+						</div>
+						<aside class="materials-aside">
+							<div class="category-panel"><div class="aside-heading"><h3>Kategori populer</h3><span>•••</span></div><a href="#materi"><b>01</b><span><strong>Analisis Klaim</strong><small>12 materi</small></span><i>→</i></a><a href="#materi"><b>02</b><span><strong>Logika</strong><small>8 materi</small></span><i>→</i></a><a href="#materi"><b>03</b><span><strong>Sains</strong><small>9 materi</small></span><i>→</i></a><a href="#materi"><b>04</b><span><strong>Sosial &amp; Budaya</strong><small>6 materi</small></span><i>→</i></a><a href="#materi"><b>05</b><span><strong>Media Digital</strong><small>7 materi</small></span><i>→</i></a></div>
+							<div class="mentor-panel"><span class="mentor-icon">✦</span><div><h3>Ingin belajar lebih terarah?</h3><p>Coba kuis pemahaman ringkas yang sudah kami siapkan.</p><a class="button button-primary button-small" href="#latihan">Lihat kuis belajar <span>→</span></a></div></div>
+						</aside>
+					</div>
+				</section>
+				<footer class="page-footer"><span>(c) 2025 Nalar</span><span>Belajar dengan rasa ingin tahu <i>✦</i></span></footer>
+			</div>
+		</main>
+	</div>
+</body>
+</html>
